@@ -215,6 +215,9 @@
       // as a fallback
       data = response.text;
     }
+    if (returnType == "String") {
+      return response.text;
+    }
     return ApiClient.convertToType(data, returnType);
   };
 
@@ -268,7 +271,7 @@
     }
 
     
-    
+    request.buffer()
     request.end(function(error, response) {
       if (callback) {
         var data = null;

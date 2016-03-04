@@ -59,6 +59,10 @@ Stuck? We're experts at using DocRaptor so please [email us](mailto:support@docr
 
 The majority of the code in this repo is generated using swagger-codegen on [docraptor.yaml](docraptor.yaml). You can modify this file and regenerate the client using `script/generate_language ruby`.
 
+The generated client needed a few fixes
+- response buffer
+- binary string response handling
+
 
 ## Release Process
 
