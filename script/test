@@ -1,0 +1,24 @@
+#!/bin/sh
+set -e
+cd "`dirname \"$0\"`/.."
+
+# check dependencies
+node -v > /dev/null    || (echo "ruby must be installed"; exit 1)
+npm -v > /dev/null || (echo "bundler must be installed"; exit 1)
+
+npm install
+
+cd test
+
+# runs a test file with PASS/FAIL message
+run_test() {
+  node $1 && echo "PASS $1" || (echo "FAIL $1"; exit 1)
+}
+
+if [ "$1" == "" ]; then
+  for test in $(ls *.js); do
+    run_test $test
+  done
+else
+  run_test $1.js
+fi
