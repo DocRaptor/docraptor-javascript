@@ -4,7 +4,7 @@
   "description": "A wrapper for the DocRaptor HTML to PDF/XLS service.",
   "license": "Apache-2.0",
   "main": "src/index.js",
-  "author": "jqr",
+  "author": "Elijah Miller <elijah.miller@gmail.com>",
   "repository": {
     "type": "git",
     "url": "https://github.com/docraptor/docraptor-javascript.git"
@@ -18,10 +18,5 @@
   },
   "dependencies": {
     "superagent": "1.7.1"
-  },
-  "devDependencies": {
-    "mocha": "~2.3.4",
-    "sinon": "1.17.3",
-    "expect.js": "~0.3.1"
   }
 }
