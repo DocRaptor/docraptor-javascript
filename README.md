@@ -1,5 +1,7 @@
 # DocRaptor JavaScript Native Client Library
 
+**WANRING: This is not production ready, you should use https://docraptor.com/documentation/node **
+
 This is a JavaScript library and Node.js module for using [DocRaptor API](http://docraptor.com/documentation) to convert HTML to PDF and XLSX.
 
 
