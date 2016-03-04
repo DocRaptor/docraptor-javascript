@@ -1,7 +1,7 @@
 {
   "projectName": "docraptor",
   "moduleName": "docraptor",
-  "projectVersion": "0.1.0",
+  "projectVersion": "0.0.1",
   "projectLicenseName": "Apache-2.0",
   "projectDescription": "A wrapper for the DocRaptor HTML to PDF/XLS service."
 }
