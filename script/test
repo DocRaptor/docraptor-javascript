@@ -3,8 +3,8 @@ set -e
 cd "`dirname \"$0\"`/.."
 
 # check dependencies
-node -v > /dev/null    || (echo "ruby must be installed"; exit 1)
-npm -v > /dev/null || (echo "bundler must be installed"; exit 1)
+node -v > /dev/null || (echo "node must be installed"; exit 1)
+npm -v > /dev/null || (echo "npm must be installed"; exit 1)
 
 npm install
 
