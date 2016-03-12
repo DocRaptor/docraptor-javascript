@@ -1,18 +1,18 @@
 (function(root, factory) {
   if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
-    define([undefined, '../ApiClient', './PrinceOptions'], factory);
+    define(['../ApiClient', './PrinceOptions'], factory);
   } else if (typeof module === 'object' && module.exports) {
     // CommonJS-like environments that support module.exports, like Node.
-    module.exports = factory(undefined, require('../ApiClient'), require('./PrinceOptions'));
+    module.exports = factory(require('../ApiClient'), require('./PrinceOptions'));
   } else {
     // Browser globals (root is window)
     if (!root.docraptor) {
       root.docraptor = {};
     }
-    factory(root.docraptor, root.docraptor.ApiClient, root.docraptor.PrinceOptions);
+    root.docraptor.Doc = factory(root.docraptor.ApiClient, root.docraptor.PrinceOptions);
   }
-}(this, function(module, ApiClient, PrinceOptions) {
+}(this, function(ApiClient, PrinceOptions) {
   'use strict';
   
   
@@ -368,10 +368,6 @@ var StrictEnum = {
 
   Doc.StrictEnum = StrictEnum;
 
-
-  if (module) {
-    module.Doc = Doc;
-  }
 
   return Doc;
   
