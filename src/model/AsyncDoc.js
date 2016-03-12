@@ -14,10 +14,10 @@
   }
 }(this, function(ApiClient) {
   'use strict';
-  
-  
-  var AsyncDoc = function AsyncDoc() { 
-    
+
+
+  var AsyncDoc = function AsyncDoc() {
+
   };
 
   AsyncDoc.constructFromObject = function(data) {
@@ -25,16 +25,16 @@
       return null;
     }
     var _this = new AsyncDoc();
-    
+
     if (data['status_id']) {
       _this['status_id'] = ApiClient.convertToType(data['status_id'], 'String');
     }
-    
+
     return _this;
   }
 
-  
-  
+
+
   /**
    * get The identifier used to get the status of the document using the status api.
    * @return {String}
@@ -50,12 +50,12 @@
   AsyncDoc.prototype.setStatusId = function(statusId) {
     this['status_id'] = statusId;
   }
-  
-  
 
-  
+
+
+
 
   return AsyncDoc;
-  
-  
+
+
 }));

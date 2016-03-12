@@ -14,10 +14,10 @@
   }
 }(this, function(ApiClient) {
   'use strict';
-  
-  
-  var AsyncDocStatus = function AsyncDocStatus() { 
-    
+
+
+  var AsyncDocStatus = function AsyncDocStatus() {
+
   };
 
   AsyncDocStatus.constructFromObject = function(data) {
@@ -25,36 +25,36 @@
       return null;
     }
     var _this = new AsyncDocStatus();
-    
+
     if (data['status']) {
       _this['status'] = ApiClient.convertToType(data['status'], 'String');
     }
-    
+
     if (data['download_url']) {
       _this['download_url'] = ApiClient.convertToType(data['download_url'], 'String');
     }
-    
+
     if (data['download_id']) {
       _this['download_id'] = ApiClient.convertToType(data['download_id'], 'String');
     }
-    
+
     if (data['message']) {
       _this['message'] = ApiClient.convertToType(data['message'], 'String');
     }
-    
+
     if (data['number_of_pages']) {
       _this['number_of_pages'] = ApiClient.convertToType(data['number_of_pages'], 'Integer');
     }
-    
+
     if (data['validation_errors']) {
       _this['validation_errors'] = ApiClient.convertToType(data['validation_errors'], 'String');
     }
-    
+
     return _this;
   }
 
-  
-  
+
+
   /**
    * get The present status of the document. Can be queued, working, completed, and failed.
    * @return {String}
@@ -70,7 +70,7 @@
   AsyncDocStatus.prototype.setStatus = function(status) {
     this['status'] = status;
   }
-  
+
   /**
    * get The URL where the document can be retrieved. This URL may only be used a few times.
    * @return {String}
@@ -86,7 +86,7 @@
   AsyncDocStatus.prototype.setDownloadUrl = function(downloadUrl) {
     this['download_url'] = downloadUrl;
   }
-  
+
   /**
    * get The identifier for downloading the document with the download api.
    * @return {String}
@@ -102,7 +102,7 @@
   AsyncDocStatus.prototype.setDownloadId = function(downloadId) {
     this['download_id'] = downloadId;
   }
-  
+
   /**
    * get Additional information.
    * @return {String}
@@ -118,7 +118,7 @@
   AsyncDocStatus.prototype.setMessage = function(message) {
     this['message'] = message;
   }
-  
+
   /**
    * get Number of PDF pages in document.
    * @return {Integer}
@@ -134,7 +134,7 @@
   AsyncDocStatus.prototype.setNumberOfPages = function(numberOfPages) {
     this['number_of_pages'] = numberOfPages;
   }
-  
+
   /**
    * get Error information.
    * @return {String}
@@ -150,12 +150,12 @@
   AsyncDocStatus.prototype.setValidationErrors = function(validationErrors) {
     this['validation_errors'] = validationErrors;
   }
-  
-  
 
-  
+
+
+
 
   return AsyncDocStatus;
-  
-  
+
+
 }));

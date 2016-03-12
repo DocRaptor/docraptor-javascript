@@ -19,10 +19,10 @@
     this.apiClient = apiClient || ApiClient.default;
 
     var self = this;
-    
-    
+
+
     /**
-     * 
+     *
      * Creates a document asynchronously. You must use a callback url or the the returned status id and the status api to find out when it completes. Then use the download api to get the document.
      * @param {Doc} doc The document to be created.
      * @param {function} callback the callback function, accepting three arguments: error, data, response
@@ -30,12 +30,12 @@
      */
     self.createAsyncDoc = function(doc, callback) {
       var postBody = doc;
-      
+
       // verify the required parameter 'doc' is set
       if (doc == null) {
         throw "Missing the required parameter 'doc' when calling createAsyncDoc";
       }
-      
+
 
       var pathParams = {
       };
@@ -58,9 +58,9 @@
       );
 
     }
-    
+
     /**
-     * 
+     *
      * Creates a document synchronously.
      * @param {Doc} doc The document to be created.
      * @param {function} callback the callback function, accepting three arguments: error, data, response
@@ -68,12 +68,12 @@
      */
     self.createDoc = function(doc, callback) {
       var postBody = doc;
-      
+
       // verify the required parameter 'doc' is set
       if (doc == null) {
         throw "Missing the required parameter 'doc' when calling createDoc";
       }
-      
+
 
       var pathParams = {
       };
@@ -96,9 +96,9 @@
       );
 
     }
-    
+
     /**
-     * 
+     *
      * Downloads a document.
      * @param {String} id The download_id returned from status request or a callback.
      * @param {function} callback the callback function, accepting three arguments: error, data, response
@@ -106,12 +106,12 @@
      */
     self.getAsyncDoc = function(id, callback) {
       var postBody = null;
-      
+
       // verify the required parameter 'id' is set
       if (id == null) {
         throw "Missing the required parameter 'id' when calling getAsyncDoc";
       }
-      
+
 
       var pathParams = {
         'id': id
@@ -135,9 +135,9 @@
       );
 
     }
-    
+
     /**
-     * 
+     *
      * Check on the status of an asynchronously created document.
      * @param {String} id The status_id returned when creating an asynchronous document.
      * @param {function} callback the callback function, accepting three arguments: error, data, response
@@ -145,12 +145,12 @@
      */
     self.getAsyncDocStatus = function(id, callback) {
       var postBody = null;
-      
+
       // verify the required parameter 'id' is set
       if (id == null) {
         throw "Missing the required parameter 'id' when calling getAsyncDocStatus";
       }
-      
+
 
       var pathParams = {
         'id': id
@@ -174,8 +174,8 @@
       );
 
     }
-    
-    
+
+
   };
 
   return DocApi;

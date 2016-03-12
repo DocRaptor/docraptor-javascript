@@ -14,20 +14,20 @@
   }
 }(this, function(ApiClient) {
   'use strict';
-  
-  
-  var PrinceOptions = function PrinceOptions() { 
-    
+
+
+  var PrinceOptions = function PrinceOptions() {
+
     /**
      * Specify the CSS media type. Defaults to \"print\" but you may want to use \"screen\" for web styles.
      * datatype: String
-     * required 
+     * required
      **/
     this['media'] = 'print';
     /**
      * Specify the input format.
      * datatype: InputEnum
-     * required 
+     * required
      **/
     this['input'] = 'html';
   };
@@ -37,120 +37,120 @@
       return null;
     }
     var _this = new PrinceOptions();
-    
+
     if (data['baseurl']) {
       _this['baseurl'] = ApiClient.convertToType(data['baseurl'], 'String');
     }
-    
+
     if (data['no_xinclude']) {
       _this['no_xinclude'] = ApiClient.convertToType(data['no_xinclude'], 'Boolean');
     }
-    
+
     if (data['no_network']) {
       _this['no_network'] = ApiClient.convertToType(data['no_network'], 'Boolean');
     }
-    
+
     if (data['http_user']) {
       _this['http_user'] = ApiClient.convertToType(data['http_user'], 'String');
     }
-    
+
     if (data['http_password']) {
       _this['http_password'] = ApiClient.convertToType(data['http_password'], 'String');
     }
-    
+
     if (data['http_proxy']) {
       _this['http_proxy'] = ApiClient.convertToType(data['http_proxy'], 'String');
     }
-    
+
     if (data['http_timeout']) {
       _this['http_timeout'] = ApiClient.convertToType(data['http_timeout'], 'Integer');
     }
-    
+
     if (data['insecure']) {
       _this['insecure'] = ApiClient.convertToType(data['insecure'], 'Boolean');
     }
-    
+
     if (data['media']) {
       _this['media'] = ApiClient.convertToType(data['media'], 'String');
     }
-    
+
     if (data['no_author_style']) {
       _this['no_author_style'] = ApiClient.convertToType(data['no_author_style'], 'Boolean');
     }
-    
+
     if (data['no_default_style']) {
       _this['no_default_style'] = ApiClient.convertToType(data['no_default_style'], 'Boolean');
     }
-    
+
     if (data['no_embed_fonts']) {
       _this['no_embed_fonts'] = ApiClient.convertToType(data['no_embed_fonts'], 'Boolean');
     }
-    
+
     if (data['no_subset_fonts']) {
       _this['no_subset_fonts'] = ApiClient.convertToType(data['no_subset_fonts'], 'Boolean');
     }
-    
+
     if (data['no_compress']) {
       _this['no_compress'] = ApiClient.convertToType(data['no_compress'], 'Boolean');
     }
-    
+
     if (data['encrypt']) {
       _this['encrypt'] = ApiClient.convertToType(data['encrypt'], 'Boolean');
     }
-    
+
     if (data['key_bits']) {
       _this['key_bits'] = ApiClient.convertToType(data['key_bits'], 'Integer');
     }
-    
+
     if (data['user_password']) {
       _this['user_password'] = ApiClient.convertToType(data['user_password'], 'String');
     }
-    
+
     if (data['owner_password']) {
       _this['owner_password'] = ApiClient.convertToType(data['owner_password'], 'String');
     }
-    
+
     if (data['disallow_print']) {
       _this['disallow_print'] = ApiClient.convertToType(data['disallow_print'], 'Boolean');
     }
-    
+
     if (data['disallow_copy']) {
       _this['disallow_copy'] = ApiClient.convertToType(data['disallow_copy'], 'Boolean');
     }
-    
+
     if (data['disallow_annotate']) {
       _this['disallow_annotate'] = ApiClient.convertToType(data['disallow_annotate'], 'Boolean');
     }
-    
+
     if (data['disallow_modify']) {
       _this['disallow_modify'] = ApiClient.convertToType(data['disallow_modify'], 'Boolean');
     }
-    
+
     if (data['input']) {
       _this['input'] = ApiClient.convertToType(data['input'], 'String');
     }
-    
+
     if (data['version']) {
       _this['version'] = ApiClient.convertToType(data['version'], 'String');
     }
-    
+
     if (data['javascript']) {
       _this['javascript'] = ApiClient.convertToType(data['javascript'], 'Boolean');
     }
-    
+
     if (data['css_dpi']) {
       _this['css_dpi'] = ApiClient.convertToType(data['css_dpi'], 'Integer');
     }
-    
+
     if (data['profile']) {
       _this['profile'] = ApiClient.convertToType(data['profile'], 'String');
     }
-    
+
     return _this;
   }
 
-  
-  
+
+
   /**
    * get Set the baseurl for assets.
    * @return {String}
@@ -166,7 +166,7 @@
   PrinceOptions.prototype.setBaseurl = function(baseurl) {
     this['baseurl'] = baseurl;
   }
-  
+
   /**
    * get Disable XML inclusion.
    * @return {Boolean}
@@ -182,7 +182,7 @@
   PrinceOptions.prototype.setNoXinclude = function(noXinclude) {
     this['no_xinclude'] = noXinclude;
   }
-  
+
   /**
    * get Disable network access.
    * @return {Boolean}
@@ -198,7 +198,7 @@
   PrinceOptions.prototype.setNoNetwork = function(noNetwork) {
     this['no_network'] = noNetwork;
   }
-  
+
   /**
    * get Set the user for HTTP authentication.
    * @return {String}
@@ -214,7 +214,7 @@
   PrinceOptions.prototype.setHttpUser = function(httpUser) {
     this['http_user'] = httpUser;
   }
-  
+
   /**
    * get Set the password for HTTP authentication.
    * @return {String}
@@ -230,7 +230,7 @@
   PrinceOptions.prototype.setHttpPassword = function(httpPassword) {
     this['http_password'] = httpPassword;
   }
-  
+
   /**
    * get Set the HTTP proxy server.
    * @return {String}
@@ -246,7 +246,7 @@
   PrinceOptions.prototype.setHttpProxy = function(httpProxy) {
     this['http_proxy'] = httpProxy;
   }
-  
+
   /**
    * get Set the HTTP request timeout.
    * @return {Integer}
@@ -262,7 +262,7 @@
   PrinceOptions.prototype.setHttpTimeout = function(httpTimeout) {
     this['http_timeout'] = httpTimeout;
   }
-  
+
   /**
    * get Disable SSL verification.
    * @return {Boolean}
@@ -278,7 +278,7 @@
   PrinceOptions.prototype.setInsecure = function(insecure) {
     this['insecure'] = insecure;
   }
-  
+
   /**
    * get Specify the CSS media type. Defaults to \"print\" but you may want to use \"screen\" for web styles.
    * @return {String}
@@ -294,7 +294,7 @@
   PrinceOptions.prototype.setMedia = function(media) {
     this['media'] = media;
   }
-  
+
   /**
    * get Ignore author stylesheets.
    * @return {Boolean}
@@ -310,7 +310,7 @@
   PrinceOptions.prototype.setNoAuthorStyle = function(noAuthorStyle) {
     this['no_author_style'] = noAuthorStyle;
   }
-  
+
   /**
    * get Ignore default stylesheets.
    * @return {Boolean}
@@ -326,7 +326,7 @@
   PrinceOptions.prototype.setNoDefaultStyle = function(noDefaultStyle) {
     this['no_default_style'] = noDefaultStyle;
   }
-  
+
   /**
    * get Disable font embedding in PDFs.
    * @return {Boolean}
@@ -342,7 +342,7 @@
   PrinceOptions.prototype.setNoEmbedFonts = function(noEmbedFonts) {
     this['no_embed_fonts'] = noEmbedFonts;
   }
-  
+
   /**
    * get Disable font subsetting in PDFs.
    * @return {Boolean}
@@ -358,7 +358,7 @@
   PrinceOptions.prototype.setNoSubsetFonts = function(noSubsetFonts) {
     this['no_subset_fonts'] = noSubsetFonts;
   }
-  
+
   /**
    * get Disable PDF compression.
    * @return {Boolean}
@@ -374,7 +374,7 @@
   PrinceOptions.prototype.setNoCompress = function(noCompress) {
     this['no_compress'] = noCompress;
   }
-  
+
   /**
    * get Encrypt PDF output.
    * @return {Boolean}
@@ -390,7 +390,7 @@
   PrinceOptions.prototype.setEncrypt = function(encrypt) {
     this['encrypt'] = encrypt;
   }
-  
+
   /**
    * get Set encryption key size.
    * @return {Integer}
@@ -406,7 +406,7 @@
   PrinceOptions.prototype.setKeyBits = function(keyBits) {
     this['key_bits'] = keyBits;
   }
-  
+
   /**
    * get Set the PDF user password.
    * @return {String}
@@ -422,7 +422,7 @@
   PrinceOptions.prototype.setUserPassword = function(userPassword) {
     this['user_password'] = userPassword;
   }
-  
+
   /**
    * get Set the PDF owner password.
    * @return {String}
@@ -438,7 +438,7 @@
   PrinceOptions.prototype.setOwnerPassword = function(ownerPassword) {
     this['owner_password'] = ownerPassword;
   }
-  
+
   /**
    * get Disallow printing of this PDF.
    * @return {Boolean}
@@ -454,7 +454,7 @@
   PrinceOptions.prototype.setDisallowPrint = function(disallowPrint) {
     this['disallow_print'] = disallowPrint;
   }
-  
+
   /**
    * get Disallow copying of this PDF.
    * @return {Boolean}
@@ -470,7 +470,7 @@
   PrinceOptions.prototype.setDisallowCopy = function(disallowCopy) {
     this['disallow_copy'] = disallowCopy;
   }
-  
+
   /**
    * get Disallow annotation of this PDF.
    * @return {Boolean}
@@ -486,7 +486,7 @@
   PrinceOptions.prototype.setDisallowAnnotate = function(disallowAnnotate) {
     this['disallow_annotate'] = disallowAnnotate;
   }
-  
+
   /**
    * get Disallow modification of this PDF.
    * @return {Boolean}
@@ -502,7 +502,7 @@
   PrinceOptions.prototype.setDisallowModify = function(disallowModify) {
     this['disallow_modify'] = disallowModify;
   }
-  
+
   /**
    * get Specify the input format.
    * @return {InputEnum}
@@ -518,7 +518,7 @@
   PrinceOptions.prototype.setInput = function(input) {
     this['input'] = input;
   }
-  
+
   /**
    * get Specify a specific verison of PrinceXML to use.
    * @return {String}
@@ -534,7 +534,7 @@
   PrinceOptions.prototype.setVersion = function(version) {
     this['version'] = version;
   }
-  
+
   /**
    * get Enable PrinceXML JavaScript. DocRaptor JavaScript parsing is also available elsewhere.
    * @return {Boolean}
@@ -550,7 +550,7 @@
   PrinceOptions.prototype.setJavascript = function(javascript) {
     this['javascript'] = javascript;
   }
-  
+
   /**
    * get Set the DPI when rendering CSS. Defaults to 96 but can be set with Prince 9.0 and up.
    * @return {Integer}
@@ -566,7 +566,7 @@
   PrinceOptions.prototype.setCssDpi = function(cssDpi) {
     this['css_dpi'] = cssDpi;
   }
-  
+
   /**
    * get In Prince 9.0 and up you can set the PDF profile.
    * @return {String}
@@ -582,8 +582,8 @@
   PrinceOptions.prototype.setProfile = function(profile) {
     this['profile'] = profile;
   }
-  
-  
+
+
 
   var InputEnum = {
 
@@ -591,12 +591,12 @@
 	   * @const
 	   */
 	  HTML: "html",
-	  
+
 	  /**
 	   * @const
 	   */
 	  XML: "xml",
-	  
+
 	  /**
 	   * @const
 	   */
@@ -607,6 +607,6 @@
 
 
   return PrinceOptions;
-  
-  
+
+
 }));

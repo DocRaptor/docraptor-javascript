@@ -270,7 +270,7 @@
       request.accept(accept);
     }
 
-    
+
     request.buffer()
     request.end(function(error, response) {
       if (callback) {
@@ -283,7 +283,7 @@
     });
 
     return request;
-    
+
   };
 
   ApiClient.parseDate = function parseDate(str) {
